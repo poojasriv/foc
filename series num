@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int findSumOfSeries(int n) {
+   int sum = 0;
+   for (int i = 1; i <= n; i++) {
+      if (i % 2 == 0)
+         sum -= (i*i);
+      else
+         sum += (i*i);
+   }
+   return sum;
+}
+int main(void) {
+   int n = 5;
+   cout<<"The sum of series is "<<findSumOfSeries(n);
+}
